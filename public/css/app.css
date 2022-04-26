@@ -44,7 +44,7 @@ header {
   min-height: 8vh;
   display: flex;
   align-items: center;
-  background: lightblue;
+  background: #0082f9;
 }
 
 main {
@@ -55,12 +55,25 @@ main {
 
 footer {
   min-height: 5vh;
-  background: yellowgreen;
+  display: flex;
+  align-items: center;
+  background: #303030;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #f5f5f5;
 }
 
 .container {
   width: 80vw;
   margin: 0 auto;
+}
+
+nav {
+  color: #f5f5f5;
 }
 
 nav ul {
@@ -74,6 +87,7 @@ nav ul a {
 
 nav ul a:hover {
   text-decoration: underline;
+  color: #303030;
 }
 
 table {
@@ -93,11 +107,34 @@ table th {
 table th,
 table td {
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 table .view_button {
   padding-left: 7px;
   font-size: 16px;
+}
+
+.container_show {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.container_show .go_back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container_show .go_back a {
+  padding: 4px 8px;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  font-size: 20px;
 }
 

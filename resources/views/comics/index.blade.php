@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('metaTitle', '| Comics')
+@section('metaTitle', '| Index')
 
 @section('mainContent')
     <table>
