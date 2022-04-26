@@ -9,3 +9,55 @@ html {
   font-size: 14px;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  background: lightblue;
+}
+
+main {
+  flex-grow: 1;
+  background: rebeccapurple;
+}
+
+footer {
+  height: 5vh;
+  background: yellowgreen;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  border: 2px dashed black;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+nav ul a {
+  font-weight: bolder;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
