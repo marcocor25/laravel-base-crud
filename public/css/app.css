@@ -9,6 +9,16 @@ html {
   font-size: 14px;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 ul,
 ol {
   list-style: none;
@@ -26,7 +36,7 @@ body {
 }
 
 header {
-  height: 8vh;
+  min-height: 8vh;
   display: flex;
   align-items: center;
   background: lightblue;
@@ -34,18 +44,18 @@ header {
 
 main {
   flex-grow: 1;
-  background: rebeccapurple;
+  padding: 20px 0;
+  overflow: auto;
 }
 
 footer {
-  height: 5vh;
+  min-height: 5vh;
   background: yellowgreen;
 }
 
 .container {
   width: 80vw;
   margin: 0 auto;
-  border: 2px dashed black;
 }
 
 nav ul {
@@ -59,5 +69,25 @@ nav ul a {
 
 nav ul a:hover {
   text-decoration: underline;
+}
+
+table {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+table th {
+  text-align: start;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+table figure {
+  width: 60px;
+  aspect-ratio: 1/1;
 }
 

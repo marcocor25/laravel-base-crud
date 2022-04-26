@@ -10,6 +10,14 @@ html {
     font-size: 14px;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
 ul,
 ol {
     list-style: none;
@@ -27,7 +35,7 @@ body {
 }
 
 header {
-    height: 8vh;
+    min-height: 8vh;
     display: flex;
     align-items: center;
     background: lightblue;
@@ -35,18 +43,18 @@ header {
 
 main {
     flex-grow: 1;
-    background: rebeccapurple;
+    padding: 20px 0;
+    overflow: auto;
 }
 
 footer {
-    height: 5vh;
+    min-height: 5vh;
     background: yellowgreen;
 }
 
 .container {
     width: 80vw;
     margin: 0 auto;
-    border: 2px dashed black;
 }
 
 nav {
@@ -61,5 +69,24 @@ nav {
                 text-decoration: underline;
             }
         }
+    }
+}
+
+table {
+    width: 80vw;
+    margin: 0 auto;
+
+    th {
+        text-align: start;
+    }
+    
+    th, td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    figure {
+        width: 60px;
+        aspect-ratio: 1/1;
     }
 }
