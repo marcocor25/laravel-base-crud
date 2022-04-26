@@ -1,9 +1,11 @@
 @extends('layouts.home')
 
+@section('metaTitle', '| Comics')
+
 @section('mainContent')
     <table>
         <tr>
-            <th>ID</th>
+            <th>#</th>
             <th>Title</th>
             <th>Thumb</th>
             <th>Series</th>
@@ -29,7 +31,9 @@
                 <td>{{ $el->sale_date }}</td>
                 <td>{{ $el->type }}</td>
                 <td>
-                    <a href="" class="view_button"><i class="fa-solid fa-eye"></i></a>
+                    <a href="{{ route('comics.show', $el) }}" class="view_button">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
                 </td>
             </tr>
         @endforeach

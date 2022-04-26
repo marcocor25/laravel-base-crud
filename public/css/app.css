@@ -17,6 +17,11 @@ img {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 ul,
@@ -76,6 +81,11 @@ table {
   margin: 0 auto;
 }
 
+table figure {
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+
 table th {
   text-align: start;
 }
@@ -84,11 +94,6 @@ table th,
 table td {
   padding: 10px;
   border: 1px solid black;
-}
-
-table figure {
-  width: 60px;
-  aspect-ratio: 1/1;
 }
 
 table .view_button {
