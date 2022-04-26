@@ -91,3 +91,8 @@ table figure {
   aspect-ratio: 1/1;
 }
 
+table .view_button {
+  padding-left: 7px;
+  font-size: 16px;
+}
+

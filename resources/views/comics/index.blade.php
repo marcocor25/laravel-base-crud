@@ -9,6 +9,7 @@
             <th>Series</th>
             <th>Sale Date</th>
             <th>Type</th>
+            <th>View</th>
         </tr>
 
         @foreach ($comics as $el)
@@ -27,6 +28,9 @@
                 <td>{{ $el->series }}</td>
                 <td>{{ $el->sale_date }}</td>
                 <td>{{ $el->type }}</td>
+                <td>
+                    <a href="" class="view_button"><i class="fa-solid fa-eye"></i></a>
+                </td>
             </tr>
         @endforeach
     </table>
