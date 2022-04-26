@@ -20,7 +20,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="{{ route('comics.index') }}">Comics</a></li>
-                    <li><a href="">Create</a></li>
+                    <li><a href="{{ route('comics.create') }}">Create</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +34,7 @@
 
     <footer>
         <div class="container">
-            <h4>Footer</h4>
+            <h5>Footer</h5>
         </div>
     </footer>
 
