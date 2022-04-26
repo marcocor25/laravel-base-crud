@@ -9,8 +9,9 @@
             <th>Title</th>
             <th>Thumb</th>
             <th>Series</th>
-            <th>Sale Date</th>
             <th>Type</th>
+            <th>Sale Date</th>
+            <th>Price</th>
             <th>View</th>
         </tr>
 
@@ -28,8 +29,9 @@
                     </figure>
                 </td>
                 <td>{{ $el->series }}</td>
-                <td>{{ $el->sale_date }}</td>
                 <td>{{ $el->type }}</td>
+                <td>{{ $el->sale_date }}</td>
+                <td>{{ $el->price }}</td>
                 <td>
                     <a href="{{ route('comics.show', $el) }}" class="view_button">
                         <i class="fa-solid fa-eye"></i>

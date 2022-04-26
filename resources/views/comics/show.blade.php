@@ -9,8 +9,9 @@
             <th>Title</th>
             <th>Thumb</th>
             <th>Series</th>
-            <th>Sale Date</th>
             <th>Type</th>
+            <th>Sale Date</th>
+            <th>Price</th>
         </tr>
 
         <tr>
@@ -26,8 +27,9 @@
                 </figure>
             </td>
             <td>{{ $comic->series }}</td>
-            <td>{{ $comic->sale_date }}</td>
             <td>{{ $comic->type }}</td>
+            <td>{{ $comic->sale_date }}</td>
+            <td>{{ $comic->price }}</td>
         </tr>
     </table>
 
