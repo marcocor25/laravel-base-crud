@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Comic;
 use Illuminate\Http\Request;
+use PhpParser\PrettyPrinter\Standard;
 
 class ComicController extends Controller
 {
@@ -14,7 +15,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
