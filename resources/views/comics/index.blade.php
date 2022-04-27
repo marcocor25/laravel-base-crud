@@ -13,7 +13,7 @@
             <th>Sale Date</th>
             <th>Price</th>
             <th>View</th>
-            <th>Edit</th>
+            <th>Delete</th>
         </tr>
 
         @foreach ($comics as $el)
@@ -39,9 +39,17 @@
                     </a>
                 </td>
                 <td>
-                    <a href="{{ route('comics.edit', $el) }}" class="view_edit_button">
-                        <i class="fa-solid fa-pen"></i>
-                    </a>
+                    <form action="{{ route('comics.destroy', $el) }}" method="POST">
+
+                        @csrf
+
+                        @method('DELETE')
+
+                        <button type="submit" class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+
+                    </form>
                 </td>
             </tr>
         @endforeach

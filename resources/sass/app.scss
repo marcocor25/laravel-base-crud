@@ -135,7 +135,7 @@ table {
     }
 }
 
-form {
+.form {
     width: 40vw;
     padding: 20px 0;
     display: flex;
@@ -173,4 +173,12 @@ form {
             cursor: pointer;
         }
     }
+}
+
+.delete {
+    padding-left: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
 }

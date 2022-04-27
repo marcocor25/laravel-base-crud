@@ -5,7 +5,7 @@
 @section('mainContent')
     <h1>Modifica articolo</h1>
 
-    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
+    <form action="{{ route('comics.update', $comic->id) }}" method="POST" class="form">
 
         @csrf
 

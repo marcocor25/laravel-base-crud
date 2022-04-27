@@ -5,7 +5,7 @@
 @section('mainContent')
     <h1>Inserimento nuovo articolo</h1>
 
-    <form action="{{ route('comics.store') }}" method="POST">
+    <form action="{{ route('comics.store') }}" method="POST" class="form">
 
         @csrf
 
