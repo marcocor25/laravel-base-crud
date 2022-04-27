@@ -151,8 +151,26 @@ form {
         margin-bottom: 10px;
     }
 
-    #submint {
-        width: 80px;
-        padding: 5px;
+    .input-wrapper {
+        display: flex;
+        gap: 10px;
+
+        #submint {
+            border-radius: 2px;
+            border: 1px solid #767676;
+            color: #f5f5f5;
+            background: #0082f9;
+
+            &:hover {
+                background: #0070d9;
+            }
+        }
+
+        #submint,
+        #reset {
+            width: 80px;
+            padding: 5px;
+            cursor: pointer;
+        }
     }
 }

@@ -35,7 +35,10 @@
         <textarea name="description" id="description" cols="30" rows="10" placeholder="Inserisci una descrizione..." required>
         </textarea>
 
-        <input type="submit" value="Invia" id="submint">
+        <div class="input-wrapper">
+            <input type="reset" value="Reset" id="reset">
+            <input type="submit" value="Invia" id="submint">
+        </div>
 
     </form>
 @endsection

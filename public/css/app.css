@@ -155,8 +155,26 @@ form select {
   margin-bottom: 10px;
 }
 
-form #submint {
+form .input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+form .input-wrapper #submint {
+  border-radius: 2px;
+  border: 1px solid #767676;
+  color: #f5f5f5;
+  background: #0082f9;
+}
+
+form .input-wrapper #submint:hover {
+  background: #0070d9;
+}
+
+form .input-wrapper #submint,
+form .input-wrapper #reset {
   width: 80px;
   padding: 5px;
+  cursor: pointer;
 }
 
