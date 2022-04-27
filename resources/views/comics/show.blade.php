@@ -9,9 +9,11 @@
             <th>Title</th>
             <th>Thumb</th>
             <th>Series</th>
+            <th>Description</th>
             <th>Type</th>
             <th>Sale Date</th>
             <th>Price</th>
+            <th>Edit</th>
         </tr>
 
         <tr>
@@ -27,9 +29,15 @@
                 </figure>
             </td>
             <td>{{ $comic->series }}</td>
+            <td>{{ $comic->description }}</td>
             <td>{{ $comic->type }}</td>
             <td>{{ $comic->sale_date }}</td>
             <td>${{ number_format((float) $comic->price, 2, ',', '') }}</td>
+            <td>
+                <a href="{{ route('comics.edit', $comic) }}" class="view_edit_button">
+                    <i class="fa-solid fa-pen"></i>
+                </a>
+            </td>
         </tr>
     </table>
 

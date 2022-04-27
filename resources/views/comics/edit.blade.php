@@ -23,8 +23,8 @@
         <label for="type">Tipologia fumetto</label>
         <select name="type" id="type" required>
             <option selected disabled>Seleziona una tipologia</option>
-            <option value="comic_book" {{ $comic->type == 'comic book' ? 'selected' : '' }}>Comic book</option>
-            <option value="graphic_novel" {{ $comic->type == 'graphic novel' ? 'selected' : '' }}>Graphic novel</option>
+            <option value="comic book" {{ $comic->type == 'comic book' ? 'selected' : '' }}>Comic book</option>
+            <option value="graphic novel" {{ $comic->type == 'graphic novel' ? 'selected' : '' }}>Graphic novel</option>
         </select>
 
         <label for="sale_date">Data pubblicazione</label>
