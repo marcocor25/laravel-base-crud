@@ -29,7 +29,7 @@
             <td>{{ $comic->series }}</td>
             <td>{{ $comic->type }}</td>
             <td>{{ $comic->sale_date }}</td>
-            <td>{{ $comic->price }}</td>
+            <td>${{ number_format((float) $comic->price, 2, ',', '') }}</td>
         </tr>
     </table>
 

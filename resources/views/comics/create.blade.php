@@ -32,8 +32,7 @@
         <input type="text" name="price" id="price" placeholder="Inserisci un prezzo..." required>
 
         <label for="description">Descrizione</label>
-        <textarea name="description" id="description" cols="30" rows="10" placeholder="Inserisci una descrizione..." required>
-        </textarea>
+        <textarea name="description" id="description" cols="30" rows="10" placeholder="Inserisci una descrizione..."></textarea>
 
         <div class="input-wrapper">
             <input type="reset" value="Reset" id="reset">

@@ -31,7 +31,7 @@
                 <td>{{ $el->series }}</td>
                 <td>{{ $el->type }}</td>
                 <td>{{ $el->sale_date }}</td>
-                <td>{{ $el->price }}</td>
+                <td>${{ number_format((float) $el->price, 2, ',', '') }}</td>
                 <td>
                     <a href="{{ route('comics.show', $el) }}" class="view_button">
                         <i class="fa-solid fa-eye"></i>
