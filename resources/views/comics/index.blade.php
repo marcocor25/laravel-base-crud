@@ -13,6 +13,7 @@
             <th>Sale Date</th>
             <th>Price</th>
             <th>View</th>
+            <th>Edit</th>
         </tr>
 
         @foreach ($comics as $el)
@@ -33,8 +34,13 @@
                 <td>{{ $el->sale_date }}</td>
                 <td>${{ number_format((float) $el->price, 2, ',', '') }}</td>
                 <td>
-                    <a href="{{ route('comics.show', $el) }}" class="view_button">
+                    <a href="{{ route('comics.show', $el) }}" class="view_edit_button">
                         <i class="fa-solid fa-eye"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="{{ route('comics.edit', $el) }}" class="view_edit_button">
+                        <i class="fa-solid fa-pen"></i>
                     </a>
                 </td>
             </tr>

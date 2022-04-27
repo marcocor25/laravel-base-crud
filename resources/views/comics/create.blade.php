@@ -21,8 +21,8 @@
         <label for="type">Tipologia fumetto</label>
         <select name="type" id="type" required>
             <option value="" selected disabled>Seleziona una tipologia</option>
-            <option value="comic_book">Comic book</option>
-            <option value="graphic_novel">Graphic novel</option>
+            <option value="comic book">Comic book</option>
+            <option value="graphic novel">Graphic novel</option>
         </select>
 
         <label for="sale_date">Data pubblicazione</label>
