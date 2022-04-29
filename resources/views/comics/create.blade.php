@@ -3,6 +3,18 @@
 @section('metaTitle', ' | Create')
 
 @section('mainContent')
+
+    @if ($errors->any())
+        <div class="alert">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <h1>Inserimento nuovo articolo</h1>
 
     <form action="{{ route('comics.store') }}" method="POST" class="form">
@@ -40,4 +52,5 @@
         </div>
 
     </form>
+
 @endsection

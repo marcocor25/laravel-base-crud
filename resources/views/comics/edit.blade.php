@@ -3,6 +3,7 @@
 @section('metaTitle', ' | Edit')
 
 @section('mainContent')
+
     <h1>Modifica articolo</h1>
 
     <form action="{{ route('comics.update', $comic->id) }}" method="POST" class="form">
@@ -42,4 +43,5 @@
         </div>
 
     </form>
+    
 @endsection
