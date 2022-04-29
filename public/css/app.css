@@ -192,6 +192,7 @@ table .view_edit_button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 10px;
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
